@@ -38,6 +38,9 @@ body{
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+ul{
+	list-style-type: none;
+}
 /*Header*/
 header{
 	background: #35424a;
@@ -98,6 +101,7 @@ header a:hover{
 }
 /*Newletter*/
 #newsletter{
+	margin-top: 10px;
 	padding: 15px;
 	color: #fff;
 	background: #35424a;
@@ -179,6 +183,11 @@ footer a{
 	}
 	header li:last-child{
 		padding: 0 20px 0 0;
+	}
+	#newsletter{
+		margin-left: 20px;
+		margin-right: 20px;
+		border-radius: 2px;
 	}
 	#newsletter h1{
 		float: left;
