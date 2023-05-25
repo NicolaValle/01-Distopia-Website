@@ -1,0 +1,215 @@
+@font-face{
+	font-family: "Agency FB";
+	src: url(C:/Windows/Fonts/Agencyb.ttf);
+	font-family: "Arial";
+	src: url(C:/Windows/Fonts/Arial.ttf);
+	font-family: "Stencil";
+	src: url(C:/Windows/Fonts/Stencil.ttf);
+}
+*{
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+body{
+	font: 13px/1.5 "Agency FB", "Arial", sans-serif;
+	background-color: #f4f4f4;
+}
+/*Global*/
+.container{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+.button_1{
+	height: 27px;
+	background: #32a8a6;
+	border: none;
+	margin: 10px 0 0 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #fff;
+	border-radius: 2px;
+}
+.dark{
+	padding: 15px;
+	background: #35424a;
+	color: #fff;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+/*Header*/
+header{
+	background: #35424a;
+	color: #ffffff;
+	padding-top: 40px;
+	min-height: 70px;
+	border-bottom: #32a8a6 3px solid;
+}
+header a{
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+header li{
+	display: inline;
+	padding:  0 20px 0 0;
+}
+header li:last-child{
+	padding: 0;
+}
+header #branding{
+	text-align: center;
+}
+header #branding h1{
+	font-size: 50px;
+}
+header nav{
+	padding-top: 20px;
+	text-align: center;
+}
+header .highlight{
+	color: #32a8a6;
+	font-weight: bold;
+}
+header .current a{
+	color: #32a8a6;
+	font-weight: bold;
+}
+header a:hover{
+	color: #cccccc;
+	font-weight: bold;
+}
+/*Showcase*/
+#showcase{
+	min-height: 350px;
+	background: url('../images/SfondoShowcase.png') no-repeat 0 -100px;
+	text-align: center;
+	color: #fff;
+}
+#showcase h1{
+	margin-top: 35px;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+#showcase p{
+	font-size: 20px;
+}
+/*Newletter*/
+#newsletter{
+	padding: 15px;
+	color: #fff;
+	background: #35424a;
+}
+#newsletter form{
+	margin-top: 5px;
+	text-align: center;
+}
+#newsletter input[type="email"]{
+	padding: 2px;
+	height: 20px;
+	width: 250px;
+}
+/*Box*/
+.box{
+	text-align: center;
+	width: 100%;
+}
+#boxes .box img{
+	width: 60px;
+}
+/*Sidebar*/
+aside#sidebar{
+	padding: 10px;
+}
+aside#sidebar h3{
+	font-size: 30px;
+	font-weight: bolder;
+}
+/*main-col*/
+article#main-col{
+	margin: auto;
+}
+article#main-col h1{
+	font-size: 30px;
+	font-weight: bolder;
+}
+/*Contacts*/
+#contacts p{
+	font-family: sans-serif;
+}
+footer{
+	font-family: "Agency FB";
+	text-align: center;
+	margin: 0;
+	margin-top: 20px;
+	background-color: #35424a;
+	color: #32a8a6;
+}
+footer a{
+	font-family: sans-serif;
+	font-size: 10px;
+}
+/*Media queries*/
+@media screen and (min-width: 768px){
+	*{
+		text-align: inherit;
+	}
+	.box{
+		width: 30%;
+
+	}
+	header #branding{
+		float: left;
+		text-align: unset;
+	}
+	#showcase h1{
+		margin-top: 100px;
+		font-size: 55px;
+	}
+	#showcase{
+		min-height: 400px;
+	}
+	header nav{
+		float: right;
+	}
+	header li{
+		float: left;
+	}
+	header li:last-child{
+		padding: 0 20px 0 0;
+	}
+	#newsletter h1{
+		float: left;
+	}
+	.button_1{
+		height: 27px;
+		background: #32a8a6;
+		border: none;
+		margin: 0;
+		padding-left: 10px;
+		padding-right: 10px;
+		color: #fff;
+		border-radius: 2px;
+	}
+	#newsletter form{
+		float: right;
+	}
+	.box{
+		float: left;
+		text-align: center;
+		width: 100%;
+		padding: 10px;
+	}
+	article#main-col{
+		float: left;
+		width: 65%;
+		margin-top: 20px;
+	}
+	aside#sidebar{
+		float: right;
+		width: 30%;
+		padding: 10px;
+	}
+}
