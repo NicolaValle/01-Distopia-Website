@@ -88,6 +88,9 @@ header a:hover{
 #showcase{
 	min-height: 350px;
 	background: url('../images/SfondoShowcase.png') no-repeat 0 -100px;
+	background-position: center;
+	background-color: #35424a;
+	border-bottom: #32a8a6 3px solid;
 	text-align: center;
 	color: #fff;
 }
@@ -130,6 +133,9 @@ aside#sidebar{
 aside#sidebar h3{
 	font-size: 30px;
 	font-weight: bolder;
+}
+#sidebar li{
+	margin: auto;
 }
 /*main-col*/
 article#main-col{
