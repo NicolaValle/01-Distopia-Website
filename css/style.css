@@ -32,7 +32,7 @@ body{
 	border-radius: 2px;
 }
 .dark{
-	padding: 15px;
+	padding: 5px 15px 15px 15px;
 	background: #35424a;
 	color: #fff;
 	margin-top: 10px;
@@ -160,6 +160,65 @@ footer{
 footer a{
 	font-family: sans-serif;
 	font-size: 10px;
+} 
+/*Dropdown*/
+.dropbtn {
+  background-color: #32a8a6;
+  color: #fff;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
+.dropdown {
+  width: 90%;
+  display: inline-block;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.dropdown h1{
+	font-size: 30px;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  margin: auto;
+  margin-top: 15px;
+  z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #35424a;
+  font-weight: bolder;
+  font-size: 15px;
+  padding: 12px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: #f0efef;
+	color: #32a8a6;
+}
+/*change color on tap*/
+.dropdown-content a::selection {
+	background-color: #cccccc
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  color: #fff;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #35424a;
 }
 /*Media queries*/
 @media screen and (min-width: 768px){
@@ -226,5 +285,25 @@ footer a{
 		float: right;
 		width: 30%;
 		padding: 10px;
+	}
+	aside#sidebar h1{
+		padding: 0;
+		text-align: center;
+	}
+	#apple{
+		padding-left: 7px;
+	}
+	.dropdown{
+		padding: 50px;
+	}
+	.dropdown h1{
+		text-align: center;
+	}
+	.dropdown-content{
+		text-align: center;
+		width: fit-content;
+	}
+	.dropdown .dropbtn{
+		margin-top: 20px;
 	}
 }
