@@ -16,11 +16,16 @@ body{
 	background-color: #f4f4f4;
 }
 /*Global*/
-.container{
+hr{
+	border-color: rgba(0,0,0,0.1);
+	width: 90%;
+	margin: auto;
+}
+/*.container{
 	width: 80%;
 	margin: auto;
 	overflow: hidden;
-}
+}*/
 .button_1{
 	height: 27px;
 	background: #32a8a6;
@@ -30,6 +35,9 @@ body{
 	padding-right: 10px;
 	color: #fff;
 	border-radius: 2px;
+}
+.box-1, .box-2, .box-3{
+	padding: 15px 0;
 }
 .dark{
 	padding: 5px 15px 15px 15px;
@@ -45,7 +53,6 @@ ul{
 header{
 	background: #35424a;
 	color: #ffffff;
-	padding-top: 40px;
 	min-height: 70px;
 	border-bottom: #32a8a6 3px solid;
 }
@@ -95,7 +102,7 @@ header a:hover{
 	color: #fff;
 }
 #showcase h1{
-	margin-top: 35px;
+	padding-top: 35px;
 	font-size: 30px;
 	margin-bottom: 10px;
 }
@@ -104,10 +111,14 @@ header a:hover{
 }
 /*Newletter*/
 #newsletter{
-	margin-top: 10px;
-	padding: 15px;
 	color: #fff;
 	background: #35424a;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+#newsletter .container{
+
 }
 #newsletter form{
 	margin-top: 5px;
@@ -119,11 +130,13 @@ header a:hover{
 	width: 250px;
 }
 /*Box*/
-.box{
+.box-1, .box-2, .box-3{
 	text-align: center;
 	width: 100%;
 }
-#boxes .box img{
+#boxes .box-1 > img, 
+#boxes .box-2 > img,
+#boxes .box-3 > img{
 	width: 60px;
 }
 /*Sidebar*/
@@ -225,37 +238,50 @@ footer a{
 	*{
 		text-align: inherit;
 	}
-	.box{
-		width: 30%;
-
+	.lines{
+		width: 100%;
 	}
-	header #branding{
-		float: left;
-		text-align: unset;
+	.header .container{
+		display: flex;
+		align-content: center;
+		justify-content: space-around;
 	}
-	#showcase h1{
-		margin-top: 100px;
-		font-size: 55px;
+	.header .container .navigation{
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+		align-content: center;
+		justify-content: center;
 	}
-	#showcase{
-		min-height: 400px;
+	#boxes .container{
+		padding: 30px 30px 30px 50px;
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: space-around;
 	}
-	header nav{
-		float: right;
+	.box-1, .box-3{
+		width: 40%;
+		display: flex;
+		display: flex-start;
+		flex-flow: row nowrap;
+		align-items: center;
+		font-size: 15px;
 	}
-	header li{
-		float: left;
+	.box-2 {
+		width: 40%;
+		display: flex;
+		align-self:flex-end;
+		flex-flow: row-reverse nowrap;
+		align-items: center;
+		font-size: 15px;
 	}
-	header li:last-child{
-		padding: 0 20px 0 0;
-	}
-	#newsletter{
-		margin-left: 20px;
-		margin-right: 20px;
-		border-radius: 2px;
-	}
-	#newsletter h1{
-		float: left;
+	#newsletter .container{
+		height: 60px;
+		width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		align-content: space-around;
+		justify-content: space-around;
 	}
 	.button_1{
 		height: 27px;
